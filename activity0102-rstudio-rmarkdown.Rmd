@@ -26,7 +26,6 @@ First let's plot the data in the dino dataset:
 ```{r plot-dino, fig.height=3, fig.width=6}
 dino_data <- datasaurus_dozen %>%
   filter(dataset == "dino")
-
 ggplot(data = dino_data, mapping = aes(x = x, y = y)) +
   geom_point()
 ```
@@ -45,13 +44,11 @@ dino_data %>%
 Blah blah blah...
 
 ```{r plot-star}
-
 ```
 
 I'm some text, you should replace me with more meaningful text...
 
 ```{r cor-star}
-
 ```
 
 ### Exercise 4
@@ -59,11 +56,9 @@ I'm some text, you should replace me with more meaningful text...
 (Add code and narrative as needed. Note that two R chunks are given but they are not labeled. Use the convention from above to name them appropriately.)
 
 ```{r}
-
 ```
 
 ```{r}
-
 ```
 
 ### Exercise 5
