@@ -37,28 +37,41 @@ dino_data %>%
 The shape is like a dinosaur, however going by the correlation coeffecent it makes a downward sloping line. 
 ### Exercise 3
 
+
 (Add code and narrative as needed. Note that the R chunks are labeled with `plot-star` and `cor-star` to provide spaces to place the code for plotting and calculating the correlation coefficient. To finish, clean up the narrative by removing these instructions.)
 
 Blah blah blah...
 
 ```{r plot-star}
+star_data <- datasaurus_dozen %>%
+  filter(dataset == "star")
+ggplot(data = star_data, mapping = aes(x = x, y = y)) +
+  geom_point()
 ```
 
 I'm some text, you should replace me with more meaningful text...
 
 ```{r cor-star}
+star_data %>%
+  summarize(r = cor(x, y))
 ```
-
+the correlation coefficent is very similar to the dinosaur because the shape is not linearly correlated.
 ### Exercise 4
 
 (Add code and narrative as needed. Note that two R chunks are given but they are not labeled. Use the convention from above to name them appropriately.)
 
 ```{r}
+circle_data <- datasaurus_dozen %>%
+  filter(dataset == "circle")
+ggplot(data = circle_data, mapping = aes(x = x, y = y)) +
+  geom_point()
 ```
 
 ```{r}
+circle_data %>%
+  summarize(r = cor(x, y))
 ```
-
+The correlation coeffecnet is again similar to the dinosaur.
 ### Exercise 5
 
 (Add code and narrative as needed. To add R chunks either type out the backticks, curly braces, and the letter `r` or use the Insert chunk button above, green C+.)
