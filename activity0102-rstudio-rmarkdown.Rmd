@@ -6,6 +6,7 @@ output:
   html_document: 
     fig_height: 4
     fig_width: 8
+    highlight: espresso
 ---
 
 ### Load packages
