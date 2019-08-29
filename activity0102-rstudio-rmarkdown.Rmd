@@ -37,7 +37,7 @@ And next calculate the correlation between `x` and `y` in this dataset:
 dino_data %>%
   summarize(r = cor(x, y))
 ```
-The shape is like a dinosaur, however going by the correlation coeffecent it makes a downward sloping line. 
+The shape is like a dinosaur. Yet, the correlation coeffecient doest not tell the whole story. 
 ### Exercise 3
 
 
